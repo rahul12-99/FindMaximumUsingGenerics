@@ -1,20 +1,18 @@
 package com.genericmaximumvalue;
 
 public class GenericMax {
-    static void testMax(Integer a, Integer b, Integer c) {
-        Integer maximum = 0;
-        if (a.compareTo(maximum) > 0) {
-            maximum = a;
-        } if (b.compareTo(maximum) > 0) {
-            maximum = b;
-        } if (c.compareTo(maximum) > 0) {
-            maximum = c;
+    public static void testMax(Float x, Float y, Float z) {
+        Float maximum = x;
+        if (y.compareTo(maximum) > 0) {
+            maximum = y;
+        }
+        if (z.compareTo(maximum) > 0) {
+            maximum = z;
         }
         System.out.println("Maximum is " + maximum);
     }
 
     public static void main(String[] args) {
-        Integer a =50 ,b = 40, c = 30;
-        GenericMax.testMax(a,b,c);
+        GenericMax.testMax(23.5f,54.6f,55.6f);
     }
 }
