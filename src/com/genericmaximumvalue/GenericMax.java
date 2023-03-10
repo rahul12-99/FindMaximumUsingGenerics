@@ -17,6 +17,7 @@ public class GenericMax {
 
         return maximum;
     }
+
     @SafeVarargs
     public static <E> E getMaxMoreThanThree(E x, E... arg) {
         Arrays.sort(arg);
@@ -27,6 +28,6 @@ public class GenericMax {
         testMax(10,20,30);
         testMax(12.3f,23.4f,34.5f);
         testMax("rahul","kundan","sahil");
-        System.out.println("maximum is " + getMaxMoreThanThree(4,5,6,8,12,45,31));
+        System.out.println("maximum is " + getMaxMoreThanThree(4,5,6,76,12,45,31));
     }
 }
