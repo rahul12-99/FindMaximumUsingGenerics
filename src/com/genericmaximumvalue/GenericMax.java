@@ -14,20 +14,18 @@ public class GenericMax {
             maximum = c;
         }
         System.out.println("Maximum is " + maximum);
-
         return maximum;
     }
 
-    @SafeVarargs
-    public static <E> E getMaxMoreThanThree(E x, E... arg) {
+    public static <E> void printMax(E x, E... arg) {
         Arrays.sort(arg);
-        return arg[arg.length - 1];
+        System.out.println("Maximum is " + arg[arg.length - 1]);
     }
 
     public static void main(String[] args) {
         testMax(10,20,30);
         testMax(12.3f,23.4f,34.5f);
         testMax("rahul","kundan","sahil");
-        System.out.println("maximum is " + getMaxMoreThanThree(4,5,6,76,12,45,31));
+        printMax(1,2,3,4,5,6,7,8,9,10);
     }
 }
